@@ -503,4 +503,14 @@ h3.menu:hover {
 .fa-circle-check:before {
   content: "\f058";
   margin-left: 15px;
+}
+
+.card-menu {
+  height: 72px;
+  border-radius: 20px;
+  margin: 20px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  animation: appear 2s;
 }/*# sourceMappingURL=styles.css.map */
