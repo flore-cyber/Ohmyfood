@@ -1,0 +1,22 @@
+//ICONS FONCTIONNEMENT//
+i.fa-solid.fa-mobile-screen-button,
+.fa-solid.fa-list-ul,
+.fa-solid.fa-store
+{
+margin-top: 25px;
+font-size: 20px;
+}
+
+.fa-list-ul:before,
+.fa-mobile-screen-button:before
+ {
+  color:$color-grey-dark-grey;
+  margin: 20px;
+}
+
+
+.fa-solid.fa-store::before{
+  color:$color-primaire;
+  margin: 20px;
+  font-size: 20px;
+}

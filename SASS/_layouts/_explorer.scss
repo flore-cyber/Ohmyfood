@@ -1,0 +1,38 @@
+main{
+    background-color:$color-light-grey;
+    height: 300px;
+    margin-top: 3px;
+    padding-top: 10px;
+   }
+   h2.explorer {
+    text-align: center;
+    margin-right: 58px;
+    margin-left: 42px;
+    margin-top:  0;
+    padding-top: 39px;
+    width: 70%;  }
+   p.explorer  {
+     width: 100%;
+     font-size: 18px;
+     text-align: center;
+     font-weight: 100;
+   
+}  
+.btn{
+    border-radius: 50px;
+    width: 218px;
+    height: 50px;
+    color:$color-light-grey;
+    margin-left: 82px;
+    margin-right: 75px;
+    border: transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow:$color-grey 2px 1px 15px -3px ;
+   
+       }
+  p.txt{
+        text-align: center;
+        padding-top: 15px;
+      }
+
