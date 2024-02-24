@@ -10,23 +10,42 @@
         height: 20px;
         width: 20%;
     }
-   
-    section.Fonctionnement{
-        height: 228px;
-    }
     h2.explorer{
       width: 100%;
     }
     .btn{
       margin-left: 42%;
     }
+    section.Fonctionnement{
+        height: 228px;
+        padding: 50px 180px 50px 180px;
+    }
+   
     div.Fonctionnement {
         display: flex;
 }
+.btn-lien{
+  width:322px;
+}
+.Restaurant{
+  display: inherit;
+}
+
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    flex-direction: inherit;
+    justify-content: center;
+}
+
 .card{
   flex-wrap:wrap-reverse;
+  width: 490px;
+  height: 251px;
 }
   ul{
     flex-direction: inherit;
+    justify-content: center;
   }
 }
