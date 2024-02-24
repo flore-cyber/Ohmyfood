@@ -1,0 +1,17 @@
+@media (min-width: 1200px) {
+  nav {
+    height: 96px;
+  }
+  .logo-img {
+    height: 20px;
+  }
+  section.Fonctionnement {
+    height: 228px;
+  }
+  div.Fonctionnement {
+    display: flex;
+  }
+  ul {
+    flex-direction: inherit;
+  }
+}/*# sourceMappingURL=mediaqueries.css.map */

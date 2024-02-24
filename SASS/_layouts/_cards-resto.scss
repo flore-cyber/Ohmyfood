@@ -6,26 +6,26 @@
     background-color:$color-white;
     margin:20px;
     margin-top: 0px;}
+  
   .card-img   {  
   height: 170px;
   border-radius: 15px 15px 0 0;
   width: 100%;
-  object-fit: cover;
-  }
+  object-fit: cover;}
   .card-content{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   }
-
+  
 
   h3.card-title {
     font-size: 18px;
     font-weight: bold;
-    padding-top: 16px;
     margin-bottom: 0;
     color:$color-black;
+    margin-left: 16px;
   }
 
  p.card-subtitle {
