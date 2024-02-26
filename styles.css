@@ -595,6 +595,7 @@ a {
     margin-top: 10%;
     flex-direction: inherit;
     justify-content: center;
+    margin-top: 28px;
   }
   .card {
     flex-wrap: wrap-reverse;
