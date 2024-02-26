@@ -179,10 +179,11 @@ h2.explorer {
 }
 
 p.explorer {
-  width: 100%;
+  width: 80%;
   font-size: 18px;
   text-align: center;
   font-weight: 100;
+  margin-left: 15px;
 }
 
 .btn {
@@ -316,7 +317,6 @@ p.resto {
   background-color: #fff;
   margin: 20px;
   margin-top: 0px;
-  width: 100%;
 }
 
 .card-img {
@@ -385,6 +385,7 @@ footer {
   background: #3a3232;
   width: 100%;
   height: 186px;
+  padding: 22px 25px 22px 25px;
 }
 
 .logo-img {
@@ -432,7 +433,7 @@ section.menu {
   background: #f2f2f2;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
-  margin-top: -20%;
+  margin-top: -30%;
   position: relative;
 }
 
@@ -458,6 +459,9 @@ i.fa-solid.fa-arrow-left {
 
 img.menu {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 275px;
 }
 
 a.header {
@@ -478,8 +482,6 @@ h2.menu {
 h3.menu {
   margin: 15px;
   font-weight: 100;
-}
-h3.menu:hover {
   border-bottom: solid 3px #99e2d0;
   width: 12%;
   padding-bottom: 5px;
@@ -518,11 +520,32 @@ h3.menu:hover {
   animation: appear 2s;
 }
 
+.delay-1 {
+  animation-delay: 3s;
+}
+
+.delay-2 {
+  animation-delay: 2s;
+}
+
+.delay-3 {
+  animation-delay: 1s;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*footer*/
 footer {
   background: #3a3232;
   width: 100%;
   height: 186px;
+  padding: 22px 25px 22px 25px;
 }
 
 .logo-img {

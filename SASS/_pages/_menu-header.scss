@@ -14,6 +14,8 @@ img.logo-menu {
 }
 img.menu{
 width: 100%;
+object-fit: cover;
+height: 275px;
 
 }
 a.header {
@@ -33,9 +35,8 @@ h2.menu{
 h3.menu{
   margin: 15px;
   font-weight: 100;
-&:hover{
   border-bottom:solid 3px $color-tertiaire;
   width: 12%;
   padding-bottom: 5px;
 }
-  }
+  
