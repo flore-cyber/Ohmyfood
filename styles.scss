@@ -12,12 +12,10 @@
 @import'./SASS/_layouts/fonctionnement';
 @import'./SASS/_layouts/restaurant';
 @import'./SASS/_layouts/cards-resto';
-@import'./SASS/_components/heart';
-@import'SASS/_layouts/_footer';
+@import'./SASS/_components/_chekheart';
 @import'SASS/_pages/_menu';
 @import'./SASS/_pages/_menu-header';
-@import'./SASS/_pages/_menu-resto';
 @import'./SASS/_pages/_menu-cards';
 @include cards-menu;
-@import'./SASS/_layouts/_footer';
 @import'./SASS/_utils/mediaqueries';
+@import'./SASS/_layouts/_footer';

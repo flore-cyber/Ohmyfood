@@ -10,9 +10,21 @@ section.menu{
     background:$color-light-grey;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
-    margin-top: -30%;
+    margin-top: -80px;
     position: relative;
   }
+  .titre{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+font-family: $font-stack2-titre;
+font-size: 25px;
+  }
+  .heart-menu{
+    width: 30%;
+    padding-top: 45px;
+  }
+
   button.gradient.menu{
     margin-bottom: 35px;
   }

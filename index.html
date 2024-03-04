@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="IE=edge">
@@ -7,126 +8,142 @@
   <script src="https://kit.fontawesome.com/63bf9238d0.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
   <title>Oh my food</title>
 </head>
+
 <body>
   <div class="loader-container">
     <div class="loader"></div>
   </div>
   <header>
-    <nav>
     <h1><img class="logo-img" src="/images/logo/ohmyfood.png" alt="logo"></h1>
-    </nav>
-    <div class= "searchBar">
+  </header>
+  <main>
+    <div class="searchBar">
       <i class="fa-solid fa-location-dot"></i>
       <input type="search" placeholder="Paris,Belleville">
     </div>
-    </header>
-    <main>
-  <h2 class="explorer">Réservez le menu qui vous convient</h2>
-  <p class="explorer">Découvrez des restaurants d'exeption,
-   sélectionnés par nos soins.</p>
-    <a href="#Restaurant">
-    <div class="btn explorer gradient"> 
-      <p class="txt" >Explorer nos restaurants</p>
-    </div>
-    </a>
-    </main>
+    <section class="explorer">
+      <h2>Réservez le menu qui vous convient</h2>
+      <p>Découvrez des restaurants d'exeption,
+        sélectionnés par nos soins.</p>
+      <a href="#Restaurant">
+        <div class=" explorer btn gradient">
+          <p class="txt">Explorer nos restaurants</p>
+        </div>
+      </a>
+    </section>
     <section class="Fonctionnement">
       <h2 class="Fonctionnement">Fonctionnement</h2>
-      <div class="Fonctionnement" >
       <button class="btn-lien">
-         <span class="text">1</span>
-         <i class="fa-solid fa-mobile-screen-button"></i>
+        <span class="text">1</span>
+        <i class="fa-solid fa-mobile-screen-button"></i>
         <span class="p-Fonctionnement">Choisissez un restaurant</span>
       </button>
       <button class="btn-lien">
         <span class="text">2</span>
         <i class="fa-solid fa-list-ul"></i>
-       <span class="p-Fonctionnement" >Composez votre menu</span>
+        <span class="p-Fonctionnement">Composez votre menu</span>
       </button>
       <button class="btn-lien">
         <span class="text">3</span>
         <i class="fa-solid fa-store"></i>
-       <span class="p-Fonctionnement" >Dégustez au restaurant</span>
-      </button></div>
+        <span class="p-Fonctionnement">Dégustez au restaurant</span>
+      </button>
     </section>
-      <section class="Restaurant" id="Restaurant">
-        <h2 class="Restaurant">Restaurants</h2>
-        <div class="wrap">
-      <a class="resto" href="resto1.html">
+    <section class="Restaurant" id="Restaurant">
+      <h2 class="Restaurant">Restaurants</h2>
+      <div class="wrap">
         <article class="card">
-       <img class="card-img" src="./images/restaurants/resto1.jpg" alt="photo d'un plat dans une assiette"> 
-      <div class="badges"><p class="resto">Nouveau</p></div>
-  <div class="card-content">
-       <h3 class="card-title">La palette du goût</h3>
-        <div class="heart">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-heart"></i>
-        </div>
-  </div> 
-          <p class="card-subtitle">Ménilmontant</p> 
-      </article>
-      </a>
-      <a class="resto" href="resto2.html">
-      <article class="card">
-        <img class="card-img" src="images/restaurants/resto2.jpg" alt="photo d'un plat">
-        <div class="badges"><p class="resto">Nouveau</p></div> 
-        <div class="card-content">
-        <h3 class="card-title">La note enchantée</h3>
-        <div class="heart">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-heart"></i>
+          <img class="card-img" src="./images/restaurants/resto1.jpg" alt="photo d'un plat dans une assiette">
+          <div class="badges">
+            <p class="resto">Nouveau</p>
           </div>
-        </div>
-            <p class="card-subtitle">Charone</p>
-      </article>
-      </a>
-      <a class="resto" href="resto3.html">
-      <article class="card">
-        <img class="card-img" src="images/restaurants/resto3.jpg" alt="photo d'un plat">
-        <div class="card-content">
-        <h3 class="card-title">A la française</h3>
-        <div class="heart">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-heart"></i>
+          <div class="card-content">
+            <a href="resto1.html">
+              <h3 class="card-title">La palette du goût</h3>
+              <p class="card-subtitle">Ménilmontant</p>
+            </a>
+            <div class="heart">
+              <input type="checkbox">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart"></i>
+            </div>
           </div>
-        </div>
+
+        </article>
+        <article class="card">
+          <img class="card-img" src="images/restaurants/resto2.jpg" alt="photo d'un plat">
+          <div class="badges">
+            <p class="resto">Nouveau</p>
+          </div>
+          <div class="card-content">
+            <a href="resto2.html">
+              <h3 class="card-title">La note enchantée</h3>
+              <p class="card-subtitle">Charone</p>
+            </a>
+            <div class="heart">
+              <input type="checkbox">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="images/restaurants/resto3.jpg" alt="photo d'un plat">
+          <div class="card-content">
+            <a href="resto3.html">
+            <h3 class="card-title">A la française</h3> 
             <p class="card-subtitle">Cité rouge</p>
-      </article>
-      </a>
-      <a class="resto " href="resto4.html">
-      <article class="card">
-        <img class="card-img" src ="images/restaurants/resto4.jpg" alt="photo d'un plat">
-        <div class="card-content">
-        <h3 class="card-title">Le délice des sens</h3>
-        <div class="heart">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-solid fa-heart"></i>
-        </div>
-        </div>
+            </a>
+            <div class="heart">
+              <input type="checkbox">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="images/restaurants/resto4.jpg" alt="photo d'un plat">
+          <div class="card-content">
+            <a href="resto4.html">
+            <h3 class="card-title">Le délice des sens</h3>  
             <p class="card-subtitle">Folie-Méricourt</p>
-      </article>
-      </a>
-        </div>
+            </a>
+            <div class="heart">
+              <input type="checkbox">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
-    <footer>
-      <h3 class="logo"><img class="logo-img" src="images/logo/ohmyfood@2x.svg" alt="logo"></h3>
-      <ul>
-        <li>
-          <i class="fa-solid fa-utensils"></i>
-          <a href="#">Proposer un restaurant</a></li>
-        <li>
-          <i class="fa-regular fa-handshake"></i>
-          <a href="#">Devenir partenaire</a></li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </footer>
-  </body>
+  </main>
+  <footer>
+    <h3 class="logo"><img class="logo-img" src="images/logo/ohmyfood@2x.svg" alt="logo"></h3>
+    <ul>
+      <li>
+        <i class="fa-solid fa-utensils"></i>
+        <a href="#">Proposer un restaurant</a>
+      </li>
+      <li>
+        <i class="fa-regular fa-handshake"></i>
+        <a href="#">Devenir partenaire</a>
+      </li>
+      <li><a href="#">Mentions légales</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+
 </html>

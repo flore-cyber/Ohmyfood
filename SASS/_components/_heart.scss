@@ -1,3 +1,4 @@
+
 .heart{
     display: flex;
     width: 35%;
@@ -6,27 +7,44 @@
     font-size: 20px ; 
     padding-top: 25px;
     }
-   
-      .fa-regular.fa-heart{
-        position:absolute;
-        color:black;
-        &:hover  {     
-        
-        opacity: 0;
-  
-              }
-            }
-      .fa-solid.fa-heart{
+      input[type="checkbox"] {
+        cursor: pointer;
         position: absolute;
-        color: transparent;
         opacity: 0;
-        transition-property: all;
-         transition-duration:5s ;
-         transition-delay: 1s;
-       &:hover {
-        background-image: linear-gradient($color-btn-heart);
+        display: flex;
+        z-index: 4;
+        height: 30px; 
+        width: 30px;
+        margin-left: 0;
+        margin-top: 0;}
+        .far{
+            position:absolute;
+            color:red;   
+            opacity: 1;
+             z-index:4;
+                  }
+         .far:checked{
+            opacity:0;
+            transition: 1s;
+         }         
+        .fas {
+            cursor: pointer;
+            position: absolute;
+            background: linear-gradient($color-btn-heart) ;   
+            opacity: 0;
+            z-index: 4;
+            transition-property: all;
+            transition-duration:2s ;
+            transition-delay: 1s;
+        
+        }
+        &~:hover{
+        background:linear-gradient($color-btn-heart) ;
         background-clip: text; 
         opacity: 1;
-      
-      }   
-      }
+        transition-property: all;
+        transition: 5s;
+        
+         }
+        
+                
