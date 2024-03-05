@@ -1,36 +1,39 @@
 @media  (min-width:1200px) {
-    nav   {
-    height: 96px;
-   }
+h2{
+  margin-left: 20px;
+}
+  
+  
+  header{
+    
+      display:inherit;
+    }
    h1{
     margin-top: 30px;
-    width: 100%;;
+    width: 100%;
    }
     .logo-img {
         height: 20px;
         width: 20%;
     }
-    h2.explorer{
-      width: 100%;
+    .explorer h2{
+      width: inherit;
     }
-    .btn{
-      margin-left: 42%;
+    .explorer p{
+    width: inherit;
     }
-    section.Fonctionnement{
-        height: 228px;
-        padding: 50px 180px 50px 180px;
+    /*FONCTIONNEMENT*/
+    section.Fonctionnement {
+     height: inherit;
     }
-   
-    div.Fonctionnement {
-        display: flex;
-}
-.btn-lien{
-  width:322px;
-}
+    div.Fonctionnement{
+    display: flex;
+  }
+
+/*RESTAURANT*/
 .Restaurant{
   display: inherit;
 }
-
   .wrap {
     display: flex;
     flex-wrap: wrap;
@@ -44,9 +47,20 @@
   flex-wrap:wrap-reverse;
   width: 490px;
   height: 251px;
+}/*FOOTER*/
+
+
+footer{
+  display: flex;
+  flex-direction: row-reverse;
 }
-  ul{
-    flex-direction: inherit;
-    justify-content: center;
+h3.logo{
+  width: 30%;
+  padding-top: 70px;
+}
+
+ul{
+    flex-direction: row;
+    padding-top: 70px;
   }
 }
