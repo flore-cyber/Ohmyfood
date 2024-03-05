@@ -149,9 +149,36 @@ i.fa-solid.fa-mobile-screen-button,
   font-size: 20px;
 }
 
+/*button EXPLORER*/
+.btn {
+  border-radius: 50px;
+  width: 220px;
+  height: 40px;
+  color: #f2f2f2;
+  border: transparent;
+  margin-top: 25px;
+  cursor: pointer;
+  box-shadow: #d3d3d3 2px 1px 15px -3px;
+}
+.btn p.txt {
+  display: flex;
+  position: relative;
+  left: 15px;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 400;
+  padding: 10px;
+}
+
+button.gradient.menu {
+  margin-bottom: 35px;
+  margin-left: 20%;
+}
+
+/*button FONCTIONNEMENT*/
 .btn-lien {
   height: 73px;
-  width: 85%;
+  width: 370px;
   border-radius: 25px;
   background: #f2f2f2;
   border: 2px solid #f2f2f2;
@@ -181,26 +208,6 @@ i.fa-solid.fa-mobile-screen-button,
   font-size: 18px;
   margin-top: 5px;
   width: 323px;
-}
-
-.btn {
-  border-radius: 50px;
-  width: 220px;
-  height: 40px;
-  color: #f2f2f2;
-  border: transparent;
-  margin-top: 25px;
-  cursor: pointer;
-  box-shadow: #d3d3d3 2px 1px 15px -3px;
-}
-
-p.txt {
-  display: flex;
-  position: relative;
-  left: 15px;
-  font-size: 16px;
-  width: 100%;
-  font-weight: 400;
 }
 
 .gradient {
@@ -369,7 +376,6 @@ img.logo-menu {
 }
 
 section.menu {
-  height: 1200px;
   background: #f2f2f2;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
@@ -382,16 +388,17 @@ section.menu {
   justify-content: space-between;
   padding-right: 15px;
   font-family: "shrikhand", sans serif;
-  font-size: 25px;
+  font-size: 28px;
+}
+.titre h2 {
+  width: 90%;
+  font-size: 28px;
 }
 
 .heart-menu {
   width: 30%;
   padding-top: 45px;
-}
-
-button.gradient.menu {
-  margin-bottom: 35px;
+  font-size: xx-large;
 }
 
 img.logo-menu {
@@ -458,7 +465,7 @@ h3.menu {
 }
 .card-menu:hover .choix {
   background: #99e2d0;
-  width: 50px;
+  width: 60px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   display: flex;
@@ -511,6 +518,7 @@ p.euro {
   margin-left: auto;
   margin-top: 40px;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 .delay-1 {
@@ -534,8 +542,11 @@ p.euro {
   }
 }
 @media (min-width: 1200px) {
-  nav {
-    height: 96px;
+  h2 {
+    margin-left: 20px;
+  }
+  header {
+    display: inherit;
   }
   h1 {
     margin-top: 30px;
@@ -545,22 +556,20 @@ p.euro {
     height: 20px;
     width: 20%;
   }
-  h2.explorer {
-    width: 100%;
+  .explorer h2 {
+    width: inherit;
   }
-  .btn {
-    margin-left: 42%;
+  .explorer p {
+    width: inherit;
   }
+  /*FONCTIONNEMENT*/
   section.Fonctionnement {
-    height: 228px;
-    padding: 50px 180px 50px 180px;
+    height: inherit;
   }
   div.Fonctionnement {
     display: flex;
   }
-  .btn-lien {
-    width: 322px;
-  }
+  /*RESTAURANT*/
   .Restaurant {
     display: inherit;
   }
@@ -576,10 +585,18 @@ p.euro {
     flex-wrap: wrap-reverse;
     width: 490px;
     height: 251px;
+  } /*FOOTER*/
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  h3.logo {
+    width: 30%;
+    padding-top: 70px;
   }
   ul {
-    flex-direction: inherit;
-    justify-content: center;
+    flex-direction: row;
+    padding-top: 70px;
   }
 }
 /*footer*/

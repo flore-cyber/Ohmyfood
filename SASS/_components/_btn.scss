@@ -1,6 +1,35 @@
-.btn-lien {
+
+
+/*button EXPLORER*/
+.btn{
+    border-radius: 50px;
+    width: 220px;
+    height: 40px;
+    color:$color-light-grey;
+    border: transparent;
+    margin-top: 25px;
+    cursor: pointer;
+    box-shadow:$color-grey 2px 1px 15px -3px ;
+ p.txt{
+    display: flex;
+    position: relative;
+    left: 15px;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 400;
+    padding: 10px;
+}
+}
+
+button.gradient.menu{
+    margin-bottom: 35px;
+    margin-left: 20%;
+  }
+
+  /*button FONCTIONNEMENT*/
+  .btn-lien {
     height: 73px;
-    width: 85%;
+    width: 370px;
     border-radius: 25px;
     background: #f2f2f2;
     border: 2px solid #f2f2f2;
