@@ -234,6 +234,12 @@ span.p-Fonctionnement {
   font-weight: bold;
 }
 
+.Fonctionnement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 span.text {
   display: inline-flex;
   justify-content: center;

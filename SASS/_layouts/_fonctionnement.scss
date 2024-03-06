@@ -7,6 +7,11 @@ section.Fonctionnement{
       padding-top:28px ;
       font-weight: bold;
     }
+    .Fonctionnement{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     
     span.text{ 
       display: inline-flex;
