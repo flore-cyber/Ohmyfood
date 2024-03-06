@@ -508,6 +508,8 @@ h4.card-menu-title {
   margin: 5px;
   font-size: 18px;
   padding-left: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 p.card-menu-subtitle {
@@ -515,8 +517,8 @@ p.card-menu-subtitle {
   margin: 0;
   padding-left: 20px;
   width: 90%;
-  display: flex;
-  justify-content: space-between;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 p.euro {
