@@ -10,9 +10,7 @@
     overflow: hidden;
     margin-bottom: 15px;
     box-shadow: 2px  2px 5px  5px $color-grey;
-    
-    
-  
+      
     &:hover{
       cursor: pointer;}
         
@@ -38,6 +36,9 @@
       transition:all 0.5s;
       cursor: pointer;
     }
+  }
+  i.fa-solid.fa-circle-check{
+    color: white;
   }
    div.menu{
     text-overflow: ellipsis;

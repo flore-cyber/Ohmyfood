@@ -491,6 +491,10 @@ h3.menu {
   cursor: pointer;
 }
 
+i.fa-solid.fa-circle-check {
+  color: white;
+}
+
 div.menu {
   text-overflow: ellipsis;
   overflow: hidden;
