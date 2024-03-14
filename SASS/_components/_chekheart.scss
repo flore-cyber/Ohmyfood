@@ -1,7 +1,7 @@
 .heart{
-  display: flex;
-  flex-wrap: wrap;
-  position:relative;
+  display:flex;
+  flex-wrap: nowrap;
+  position: relative;
   width: 35%;
   justify-content: center;
   margin-left: 20px;
@@ -29,14 +29,12 @@
   transition-property: all;
   transition-duration:2s ;
   transition-delay:0.5s;
-  opacity: 1;
+  opacity: 1;}
   
-  &~.far{
-    position: absolute;
-    z-index: 5;
-    opacity: 1;
-    cursor: pointer;}
-  &~:hover {
+  .far{
+    z-index: 1;
+    cursor: pointer;
+  .far:hover {
     opacity: 0;
-    transition: 1ms;
+    transition: 10s;
   }}}

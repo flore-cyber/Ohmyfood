@@ -113,7 +113,7 @@ h1 {
   background: #f2f2f2;
   text-align: center;
   height: 50px;
-  box-shadow: darkgray 3px 1px 3px 3px;
+  box-shadow: #d3d3d3 3px 1px 3px 3px;
 }
 
 .fa-location-dot:before {
@@ -178,7 +178,7 @@ button.gradient.menu {
 /*button FONCTIONNEMENT*/
 .btn-lien {
   height: 73px;
-  width: 370px;
+  width: 330px;
   border-radius: 25px;
   background: #f2f2f2;
   border: 2px solid #f2f2f2;
@@ -192,7 +192,7 @@ button.gradient.menu {
 
 .explorer {
   background-color: #f2f2f2;
-  margin-top: 3px;
+  margin-top: 5px;
   padding-top: 10px;
   text-align: -webkit-center;
   height: 272px;
@@ -227,6 +227,8 @@ section.Fonctionnement {
   background: #fff;
   width: 100%;
   height: 420px;
+  display: flex;
+  flex-direction: column;
 }
 
 span.p-Fonctionnement {
@@ -238,6 +240,10 @@ span.p-Fonctionnement {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+h2.Fonctionnement {
+  justify-content: flex-start;
 }
 
 span.text {
@@ -272,33 +278,17 @@ span.text {
   width: 100%;
 }
 
-.badges {
-  position: absolute;
-  background: #99e2d0;
-  border: 3px solid #99e2d0;
-  color: #008766;
-  right: 50px;
-  margin-top: 20px;
-  text-align: center;
-  width: 80px;
-  height: 24px;
-  border-radius: 3px;
-}
-
-p.resto {
-  margin-top: 3px;
-}
-
 .card {
   display: flex;
-  border-radius: 15px;
   flex-direction: column;
+  border-radius: 15px;
   background-color: #fff;
   margin: 20px;
   margin-top: 0px;
 }
 
 .card-img {
+  display: flex;
   height: 170px;
   border-radius: 15px 15px 0 0;
   width: 100%;
@@ -327,9 +317,26 @@ p.card-subtitle {
   color: #000000;
 }
 
+.badges {
+  background: #99e2d0;
+  border: 3px solid #99e2d0;
+  color: #008766;
+  margin-top: 20px;
+  text-align: center;
+  width: 80px;
+  height: 24px;
+  border-radius: 3px;
+  position: absolute;
+  right: 30px;
+}
+
+p.resto {
+  margin-top: 3px;
+}
+
 .heart {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   position: relative;
   width: 35%;
   justify-content: center;
@@ -363,29 +370,20 @@ input[type=checkbox] ~ :hover {
   transition-delay: 0.5s;
   opacity: 1;
 }
-input[type=checkbox] ~ :hover ~ .far {
-  position: absolute;
-  z-index: 5;
-  opacity: 1;
+input[type=checkbox] .far {
+  z-index: 1;
   cursor: pointer;
 }
-input[type=checkbox] ~ :hover ~ :hover {
+input[type=checkbox] .far .far:hover {
   opacity: 0;
-  transition: 1ms;
-}
-
-img.logo-menu {
-  height: 30px;
-  width: 60%;
-  margin-right: 100px;
-  margin-top: 10px;
+  transition: 10s;
 }
 
 section.menu {
   background: #f2f2f2;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
-  margin-top: -80px;
+  margin-top: -50px;
   position: relative;
 }
 
@@ -450,8 +448,9 @@ h3.menu {
   margin: 15px;
   font-weight: 100;
   border-bottom: solid 3px #99e2d0;
-  width: 12%;
+  width: 45px;
   padding-bottom: 5px;
+  animation: appear 1s;
 }
 
 .card-menu {
@@ -462,9 +461,10 @@ h3.menu {
   display: flex;
   justify-content: space-between;
   animation: appear 2s;
+  animation-fill-mode: both;
   overflow: hidden;
   margin-bottom: 15px;
-  box-shadow: 0 2px 5px #3a3232;
+  box-shadow: 2px 2px 5px 5px #d3d3d3;
 }
 .card-menu:hover {
   cursor: pointer;
@@ -492,9 +492,9 @@ h3.menu {
 }
 
 div.menu {
-  margin-top: 8px;
+  text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  margin-top: 8px;
   display: flex;
   flex-direction: column;
 }
@@ -510,6 +510,7 @@ h4.card-menu-title {
   padding-left: 15px;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 p.card-menu-subtitle {
@@ -519,6 +520,7 @@ p.card-menu-subtitle {
   width: 90%;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 p.euro {
@@ -541,45 +543,65 @@ p.euro {
   animation-delay: 1s;
 }
 
+.delay-4 {
+  animation-delay: 4s;
+}
+
 @keyframes appear {
-  0% {
-    transform: scale(0);
-  }
   100% {
     transform: scale(1);
+    opacity: 1;
+  }
+  0% {
+    transform: scale(0);
+    opacity: 0;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   h2 {
     margin-left: 20px;
   }
-  header {
-    display: inherit;
-  }
   h1 {
-    margin-top: 30px;
     width: 100%;
+    margin-right: 30px;
   }
   .logo-img {
-    height: 20px;
-    width: 20%;
+    height: 34px;
+    width: 200px;
+  }
+  .explorer {
+    height: 220px;
   }
   .explorer h2 {
     width: inherit;
+    font-size: 47px;
+    font-weight: 700;
+    margin-bottom: 18px;
   }
   .explorer p {
     width: inherit;
+    font-size: 18px;
+    font-weight: 300;
   }
   /*FONCTIONNEMENT*/
   section.Fonctionnement {
     height: inherit;
   }
+  h2.Fonctionnement {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 180px;
+  }
   div.Fonctionnement {
     display: flex;
+    margin-left: 100px;
   }
   /*RESTAURANT*/
   .Restaurant {
     display: inherit;
+  }
+  .Restaurant h2 {
+    margin-left: 180px;
   }
   .wrap {
     display: flex;
@@ -593,25 +615,62 @@ p.euro {
     flex-wrap: wrap-reverse;
     width: 490px;
     height: 251px;
-  } /*FOOTER*/
+  }
+  .badges {
+    right: inherit;
+    margin-right: 20px;
+  }
+  /*FOOTER*/
   footer {
     display: flex;
+    width: 100%;
     flex-direction: row-reverse;
+    text-align: right;
+    height: 114px;
   }
-  h3.logo {
-    width: 30%;
-    padding-top: 70px;
+  img.footer {
+    height: 22px;
+    width: 120px;
+    margin-top: 45px;
+    margin-right: 20px;
   }
-  ul {
+  ul.footer {
+    display: flex;
     flex-direction: row;
-    padding-top: 70px;
+    margin-top: 70px;
+    margin-right: 70px;
+    gap: 20px;
+  }
+  /*PAGES MENU */
+  section.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+    width: 80%;
+  }
+  .titre {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+  }
+  .heart-menu.heart {
+    display: flex;
+    justify-content: flex-start;
+  }
+  h3.menu {
+    margin-right: 45%;
+  }
+  .card-menu {
+    width: 50%;
+  }
+  button.gradient.menu {
+    margin-left: 0;
   }
 }
-/*footer*/
+/*FOOTER*/
 footer {
   background: #3a3232;
-  width: 100%;
-  height: 200px;
 }
 
 .logo-img {
@@ -626,8 +685,6 @@ h3.logo {
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
   gap: 7px;
   text-decoration: none;
   list-style: none;

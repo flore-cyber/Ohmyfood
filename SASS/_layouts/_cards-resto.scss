@@ -1,23 +1,24 @@
 .card {
-    display: flex;
+  display: flex;
+  flex-direction:column;
     border-radius: 15px;
-    flex-direction: column;
     background-color:$color-white;
     margin:20px;
     margin-top: 0px;
-  }
+  
+    }
   
   .card-img   {  
+  display:flex;
   height: 170px;
   border-radius: 15px 15px 0 0;
   width: 100%;
   object-fit: cover;}
   .card-content{
-  display: flex;
+    display: flex;
   justify-content: space-between;
   width: 100%;
   }
-  
 
   h3.card-title {
     font-size: 18px;
@@ -34,3 +35,18 @@
     color: $color-black;
 }
 
+.badges{
+    background: $color-tertiaire;
+    border: 3px solid $color-tertiaire;
+    color:$color-green;
+    margin-top: 20px;
+    text-align: center;
+    width: 80px;
+    height: 24px;
+    border-radius: 3px;
+    position: absolute;
+    right: 30px;
+    }
+    p.resto {
+      margin-top: 3px;
+    }

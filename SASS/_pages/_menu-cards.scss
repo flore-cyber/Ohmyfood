@@ -5,10 +5,13 @@
     background:$color-white;
     display: flex;
     justify-content: space-between;
-    animation: appear 2s ;  
+    animation: appear 2s;
+    animation-fill-mode: both;
     overflow: hidden;
     margin-bottom: 15px;
-    box-shadow: 0 2px 5px $color-grey-dark-grey;
+    box-shadow: 2px  2px 5px  5px $color-grey;
+    
+    
   
     &:hover{
       cursor: pointer;}
@@ -37,9 +40,9 @@
     }
   }
    div.menu{
-    margin-top:8px;
+    text-overflow: ellipsis;
     overflow: hidden;
-    white-space:nowrap;
+    margin-top:8px;
     display: flex;
     flex-direction: column;
      }
@@ -54,6 +57,7 @@
     padding-left:15px;
     text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
   }
   p.card-menu-subtitle{
     font-size: 15px;
@@ -62,12 +66,15 @@
     width: 90%;
     text-overflow: ellipsis;
     overflow: hidden;
+    white-space:nowrap;
   }
     p.euro{
     display: flex;
-    margin-left: auto;
-    margin-top: 40px;
+    margin-left: auto;margin-top: 40px;
     font-weight: bold;
     margin-right: 10px;
 
   } 
+  
+    
+    
