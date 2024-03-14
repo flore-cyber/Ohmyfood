@@ -36,11 +36,11 @@
       <h2 >Réservez le menu qui vous convient</h2>
       <p >Découvrez des restaurants d'exeption,
         sélectionnés par nos soins.</p>
-      <a href="#Restaurant">
-        <div class="  btn gradient">
-          <p class="txt">Explorer nos restaurants</p>
-        </div>
-      </a>
+        <form action="#Restaurant">
+        <button class="gradient" type="submit" >
+       Explorer nos restaurants
+        </button>
+        </form>
     </section>
     <section class="Fonctionnement">
       <h2 class="Fonctionnement">Fonctionnement</h2>
@@ -63,69 +63,69 @@
       </div>
     </section>
     <section class="Restaurant" id="Restaurant">
-      <h2>Restaurants</h2>
+      <h2 class="Restaurant">Restaurants</h2>
       <div class="wrap"> 
         <article class="card">
-          <img class="card-img" src="./images/restaurants/resto1.jpg" alt="photo d'un plat dans une assiette">
+              <a class="cards" href="resto1.html">
+              <img class="card-img" src="./images/restaurants/resto1.jpg" alt="photo d'un plat dans une assiette">
             <div class="badges">
-            <p class="resto">Nouveau</p>
+              <p class="resto">Nouveau</p>
             </div>
-          <div class="card-content">
-            <a href="resto1.html">
+            <div class="card-content">
               <h3 class="card-title">La palette du goût</h3>
               <p class="card-subtitle">Ménilmontant</p>
-            </a>
-            <div class="heart">
-              <input type="checkbox">
-              <i class="far fa-heart"></i>
-              <i class="fas fa-heart"></i>
             </div>
+              </a>
+              <div class="heart">
+                  <input type="checkbox" >
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
               </div>
-            </article>
+        </article>
         <article class="card">
+          <a class="cards" href="resto2.html">
           <img class="card-img" src="images/restaurants/resto2.jpg" alt="photo d'un plat">
           <div class="badges">
             <p class="resto">Nouveau</p>
           </div>
           <div class="card-content">
-            <a href="resto2.html">
               <h3 class="card-title">La note enchantée</h3>
               <p class="card-subtitle">Charone</p>
+          </div>
             </a>
             <div class="heart">
               <input type="checkbox">
               <i class="far fa-heart"></i>
               <i class="fas fa-heart"></i>
             </div>
-          </div>
         </article>
         <article class="card">
+          <a class="cards" href="resto3.html">
           <img class="card-img" src="images/restaurants/resto3.jpg" alt="photo d'un plat">
           <div class="card-content">
-            <a href="resto3.html">
             <h3 class="card-title">À la française</h3> 
             <p class="card-subtitle">Cité rouge</p>
+          </div>
           </a>
             <div class="heart">
               <input type="checkbox">
               <i class="far fa-heart"></i>
               <i class="fas fa-heart"></i>
             </div>
-          </div>
         </article>
         <article class="card">
+          <a class="cards" href="resto4.html">
           <img class="card-img" src="images/restaurants/resto4.jpg" alt="photo d'un plat">
           <div class="card-content">
-            <a href="resto4.html">
             <h3 class="card-title">Le délice des sens</h3>  
             <p class="card-subtitle">Folie-Méricourt</p>
+          </div>
             </a>
             <div class="heart">
               <input type="checkbox">
               <i class="far fa-heart"></i>
               <i class="fas fa-heart"></i>
             </div>
-          </div>
         </article>
       </div>
     </section>
@@ -141,8 +141,11 @@
         <i class="fa-regular fa-handshake"></i>
         <a href="#">Devenir partenaire</a>
       </li>
-      <li><a href="#">Mentions légales</a></li>
-      <li><a href="#">Contact</a></li>
+      <li>
+        <a href="#">Mentions légales</a></li>
+      <li>
+        <a href="mailto:contact@ohmyfood.fr">
+          contact</a></li>
     </ul>
   </footer>
 </body>

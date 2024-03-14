@@ -46,6 +46,7 @@
     margin-top:8px;
     display: flex;
     flex-direction: column;
+    width: 80%;
      }
     .choix {
       opacity: 1;
@@ -71,9 +72,11 @@
   }
     p.euro{
     display: flex;
-    margin-left: auto;margin-top: 40px;
+    justify-content: end;
+    margin-top: 40px;
     font-weight: bold;
     margin-right: 10px;
+    width: 10%;
 
   } 
   

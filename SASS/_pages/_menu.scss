@@ -3,7 +3,7 @@ section.menu{
     background:$color-light-grey;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
-    margin-top: -50px;
+    margin: -50px auto 0 auto ;
     position: relative;
   }
   .titre{
@@ -15,11 +15,13 @@ section.menu{
   h2{
     width: 90%;
     font-size: 28px;
+    display: flex;
+    justify-content: center;
   }}
   .heart-menu{
-    width: 30%;
-    padding-top: 45px;
-    font-size: xx-large;
+    position: absolute;
+    top: 50px;
+    font-size: x-large;
   }
 
  
