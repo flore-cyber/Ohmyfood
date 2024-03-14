@@ -1,7 +1,7 @@
 
 
 /*button EXPLORER*/
-.btn{
+button{
     border-radius: 50px;
     width: 220px;
     height: 40px;
@@ -10,15 +10,6 @@
     margin-top: 25px;
     cursor: pointer;
     box-shadow:$color-grey 2px 1px 15px -3px ;
- p.txt{
-    display: flex;
-    position: relative;
-    left: 15px;
-    font-size: 16px;
-    width: 100%;
-    font-weight: 400;
-    padding: 10px;
-}
 }
 
 button.gradient.menu{

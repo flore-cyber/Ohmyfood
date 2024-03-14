@@ -150,7 +150,7 @@ i.fa-solid.fa-mobile-screen-button,
 }
 
 /*button EXPLORER*/
-.btn {
+button {
   border-radius: 50px;
   width: 220px;
   height: 40px;
@@ -159,15 +159,6 @@ i.fa-solid.fa-mobile-screen-button,
   margin-top: 25px;
   cursor: pointer;
   box-shadow: #d3d3d3 2px 1px 15px -3px;
-}
-.btn p.txt {
-  display: flex;
-  position: relative;
-  left: 15px;
-  font-size: 16px;
-  width: 100%;
-  font-weight: 400;
-  padding: 10px;
 }
 
 button.gradient.menu {
@@ -194,7 +185,7 @@ button.gradient.menu {
   background-color: #f2f2f2;
   margin-top: 5px;
   padding-top: 10px;
-  text-align: -webkit-center;
+  text-align: center;
   height: 272px;
 }
 
@@ -361,20 +352,19 @@ input[type=checkbox] ~ .fas {
   opacity: 0;
   z-index: 4;
 }
-input[type=checkbox] ~ :hover {
+input[type=checkbox] ~ :checked {
   background: linear-gradient(#FF79DA, #9356dc);
   -webkit-background-clip: text;
           background-clip: text;
   transition-property: all;
   transition-duration: 2s;
   transition-delay: 0.5s;
-  opacity: 1;
 }
-input[type=checkbox] .far {
+input[type=checkbox] ~ .far {
   z-index: 1;
   cursor: pointer;
 }
-input[type=checkbox] .far .far:hover {
+input[type=checkbox] ~ .far:checked {
   opacity: 0;
   transition: 10s;
 }

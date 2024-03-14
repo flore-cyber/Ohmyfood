@@ -23,18 +23,18 @@
     color:transparent;   
     opacity: 0;
     z-index:4;}
-&~:hover{
+&~:checked{
   background: linear-gradient($color-btn-heart);
   background-clip: text;
   transition-property: all;
   transition-duration:2s ;
   transition-delay:0.5s;
-  opacity: 1;}
+}
   
-  .far{
+  &~.far{
     z-index: 1;
-    cursor: pointer;
-  .far:hover {
+    cursor: pointer;}
+  &~.far:checked {
     opacity: 0;
     transition: 10s;
-  }}}
+  }}
