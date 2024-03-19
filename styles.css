@@ -328,11 +328,11 @@ p.card-subtitle {
   color: #008766;
   margin-top: 20px;
   text-align: center;
-  width: 80px;
+  width: 65px;
   height: 24px;
   border-radius: 3px;
   position: absolute;
-  right: 30px;
+  right: 10px;
 }
 
 p.resto {
@@ -433,6 +433,10 @@ img.logo-menu {
 i.fa-solid.fa-arrow-left {
   margin-right: 50px;
   font-size: 20px;
+}
+
+nav {
+  width: 10px;
 }
 
 h1.menu {
