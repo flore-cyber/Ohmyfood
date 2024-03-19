@@ -31,15 +31,20 @@
     z-index: 0; }
       &:checked~i.far.fa-heart{
     opacity: 0;
-    z-index: 3;
-     transition: 0.5ms;
-    
+    z-index:4;
   }
-
-&:checked~i.fas.fa-heart{
-opacity: 1;
-transition: all;
-    transition-duration:10s ;
+&~:hover{
+  background: linear-gradient($color-btn-heart);
+  background-clip: text;
+  transition-property: all;
+  transition-duration:2s ;
+  transition-delay:0.5s;
+  opacity: 1;}
+  
+  .far{
+    z-index: 1;
     cursor: pointer;
-
-}}
+  .far:hover {
+    opacity: 0;
+    transition: 10s;
+  }}}

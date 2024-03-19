@@ -198,17 +198,14 @@ button.gradient.menu {
   text-align: center;
   align-items: center;
 }
-
-.explorer h2 {
+.explorer.h2 {
   width: 287px;
   padding-top: 0px;
 }
-
-.explorer p {
+.explorer .explorer p {
   font-weight: 100;
   font-size: 18px;
   margin-top: 5px;
-  margin-bottom: 0px;
   width: 323px;
 }
 
@@ -378,14 +375,24 @@ input[type=checkbox]:checked {
 }
 input[type=checkbox]:checked ~ i.far.fa-heart {
   opacity: 0;
-  z-index: 3;
-  transition: 0.5ms;
+  z-index: 4;
 }
-input[type=checkbox]:checked ~ i.fas.fa-heart {
+input[type=checkbox] ~ :hover {
+  background: linear-gradient(#FF79DA, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-delay: 0.5s;
   opacity: 1;
-  transition: all;
-  transition-duration: 10s;
+}
+input[type=checkbox] .far {
+  z-index: 1;
   cursor: pointer;
+}
+input[type=checkbox] .far .far:hover {
+  opacity: 0;
+  transition: 10s;
 }
 
 section.menu {
