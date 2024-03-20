@@ -33,18 +33,12 @@
     opacity: 0;
     z-index:4;
   }
-&~:hover{
+&:checked~i.fas.fa-heart{
   background: linear-gradient($color-btn-heart);
   background-clip: text;
   transition-property: all;
-  transition-duration:2s ;
+  transition-duration:5s ;
   transition-delay:0.5s;
-  opacity: 1;}
-  
-  .far{
-    z-index: 1;
-    cursor: pointer;
-  .far:hover {
-    opacity: 0;
-    transition: 10s;
-  }}}
+  opacity: 1;
+}
+}

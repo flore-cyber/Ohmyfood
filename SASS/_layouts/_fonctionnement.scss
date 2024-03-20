@@ -3,7 +3,6 @@ section.Fonctionnement{
     width: 100%;
     height: 420px;
     display: flex;
-    flex-direction: column;
 }
     span.p-Fonctionnement{
       padding-top:28px ;
@@ -13,6 +12,7 @@ section.Fonctionnement{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      width: 95%;
     }
     
     h2.Fonctionnement{
