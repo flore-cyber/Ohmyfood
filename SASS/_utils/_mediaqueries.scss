@@ -49,14 +49,13 @@ h2.Restaurant{
   .wrap {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10%;
     flex-direction: inherit;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 28px;
 }
 .card{
   flex-wrap:wrap-reverse;
-  width: 490px;
+  width: 48%;
   height: 251px;
 }
 
@@ -100,7 +99,7 @@ justify-content: center;}
   width: 80%;
  }
  .titre{
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: end;
  }

@@ -32,6 +32,7 @@
       &:checked~i.far.fa-heart{
     opacity: 0;
     z-index:4;
+    transition: all 1s;
   }
 &:checked~i.fas.fa-heart{
   background: linear-gradient($color-btn-heart);

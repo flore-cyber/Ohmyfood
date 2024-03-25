@@ -282,7 +282,6 @@ span.text {
   flex-direction: column;
   border-radius: 15px;
   background-color: #fff;
-  margin: 20px;
   margin-top: 0px;
 }
 .card .badges {
@@ -374,6 +373,7 @@ input[type=checkbox]:checked {
 input[type=checkbox]:checked ~ i.far.fa-heart {
   opacity: 0;
   z-index: 4;
+  transition: all 1s;
 }
 input[type=checkbox]:checked ~ i.fas.fa-heart {
   background: linear-gradient(#FF79DA, #9356dc);
@@ -401,7 +401,6 @@ section.menu {
   font-size: 28px;
 }
 .titre h2 {
-  width: 90%;
   font-size: 28px;
   display: flex;
   justify-content: center;
@@ -616,14 +615,13 @@ p.euro {
   .wrap {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10%;
     flex-direction: inherit;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 28px;
   }
   .card {
     flex-wrap: wrap-reverse;
-    width: 490px;
+    width: 48%;
     height: 251px;
   }
   /*FOOTER*/
@@ -662,7 +660,7 @@ p.euro {
     width: 80%;
   }
   .titre {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: end;
   }
