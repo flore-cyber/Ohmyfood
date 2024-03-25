@@ -274,7 +274,7 @@ span.text {
 }
 
 .wrap {
-  width: 100%;
+  width: 80%;
 }
 
 .card {
@@ -600,7 +600,7 @@ p.euro {
   h2.Fonctionnement {
     display: flex;
     justify-content: flex-start;
-    margin-left: 180px;
+    margin-left: 150px;
   }
   div.Fonctionnement {
     display: flex;
@@ -610,7 +610,7 @@ p.euro {
     display: inherit;
   }
   h2.Restaurant {
-    margin-left: 180px;
+    margin-left: 150px;
   }
   .wrap {
     display: flex;
@@ -618,11 +618,13 @@ p.euro {
     flex-direction: inherit;
     justify-content: space-around;
     margin-top: 28px;
+    margin: 0 auto;
   }
   .card {
     flex-wrap: wrap-reverse;
     width: 48%;
     height: 251px;
+    margin-bottom: 40px;
   }
   /*FOOTER*/
   footer {
