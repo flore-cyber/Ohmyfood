@@ -38,12 +38,13 @@ h2{
   }
 
 /*RESTAURANT*/
-.Restaurant{
-  display: inherit;
-  
+section#Restaurant{ 
+  height: auto;
 }
 h2.Restaurant{
   margin-left: 150px;
+  display: flex;
+  justify-content: flex-start;
 }
 
   .wrap {
@@ -53,6 +54,7 @@ h2.Restaurant{
     justify-content: space-around;
     margin-top: 28px;
     margin: 0 auto;
+    width: 80%;
   
 }
 .card{
@@ -102,13 +104,11 @@ justify-content: center;}
   width: 80%;
  }
  .titre{
-  width: 100%;
-  display: flex;
-  justify-content: end;
+  justify-content: center;
  }
  .heart-menu.heart{
 display: flex;
-right: 28%;
+right: 0;
  }
 
  h3.menu{

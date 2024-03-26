@@ -113,6 +113,7 @@ h1 {
   -o-object-fit: cover;
      object-fit: cover;
   padding-top: 10px;
+  height: 35px;
 }
 
 .searchBar {
@@ -202,7 +203,8 @@ button.gradient.menu {
   width: 287px;
   padding-top: 0px;
 }
-.explorer .explorer p {
+
+.explorer p {
   font-weight: 100;
   font-size: 18px;
   margin-top: 5px;
@@ -262,10 +264,14 @@ span.text {
   margin-left: -20px;
 }
 
-.Restaurant {
-  display: flex;
-  flex-wrap: wrap;
+section#Restaurant {
+  height: 1200px;
   background-color: #f2f2f2;
+}
+
+.Restaurant h2 {
+  display: flex;
+  justify-content: normal;
 }
 
 .a-resto {
@@ -274,7 +280,11 @@ span.text {
 }
 
 .wrap {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 20px;
+  width: 90%;
 }
 
 .card {
@@ -365,6 +375,7 @@ input[type=checkbox] {
   width: 40px;
   z-index: 3;
   cursor: pointer;
+  margin-left: 10px;
 }
 input[type=checkbox]:checked {
   opacity: 0;
@@ -395,12 +406,11 @@ section.menu {
 
 .titre {
   display: flex;
-  justify-content: space-between;
-  padding-right: 15px;
   font-family: "shrikhand", sans serif;
   font-size: 28px;
 }
-.titre h2 {
+
+h2 {
   font-size: 28px;
   display: flex;
   justify-content: center;
@@ -408,8 +418,9 @@ section.menu {
 
 .heart-menu {
   position: absolute;
-  top: 50px;
+  top: 102px;
   font-size: x-large;
+  left: 50px;
 }
 
 img.logo-menu {
@@ -606,11 +617,13 @@ p.euro {
     display: flex;
   }
   /*RESTAURANT*/
-  .Restaurant {
-    display: inherit;
+  section#Restaurant {
+    height: auto;
   }
   h2.Restaurant {
     margin-left: 150px;
+    display: flex;
+    justify-content: flex-start;
   }
   .wrap {
     display: flex;
@@ -619,6 +632,7 @@ p.euro {
     justify-content: space-around;
     margin-top: 28px;
     margin: 0 auto;
+    width: 80%;
   }
   .card {
     flex-wrap: wrap-reverse;
@@ -662,13 +676,11 @@ p.euro {
     width: 80%;
   }
   .titre {
-    width: 100%;
-    display: flex;
-    justify-content: end;
+    justify-content: center;
   }
   .heart-menu.heart {
     display: flex;
-    right: 28%;
+    right: 0;
   }
   h3.menu {
     margin-right: 45%;
@@ -683,10 +695,11 @@ p.euro {
 /*FOOTER*/
 footer {
   background: #3a3232;
+  height: auto;
 }
 
-.logo-img {
-  height: 35px;
+img.footer {
+  height: 22px;
 }
 
 h3.logo {

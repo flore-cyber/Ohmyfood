@@ -1,14 +1,20 @@
-.Restaurant{
-
-    display:flex;
-    flex-wrap: wrap;
-    background-color:$color-light-grey;}
+section#Restaurant{
+   height: 1200px;
+   background-color:$color-light-grey;}
+.Restaurant h2{
+   display: flex;
+   justify-content: normal;
+}
  .a-resto{
     color:$color-black;
     width: 100%;
  }
  .wrap {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 20px;
+  width: 90%;
 }
   
      

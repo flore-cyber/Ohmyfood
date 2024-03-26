@@ -8,19 +8,23 @@ section.menu{
   }
   .titre{
     display: flex;
-    justify-content: space-between;
-    padding-right: 15px;
     font-family: $font-stack2-titre;
     font-size: 28px;
+  
+     }
+
+    
   h2{
     font-size: 28px;
     display: flex;
     justify-content: center;
   }
-}
+
 
   .heart-menu{
     position: absolute;
-    top: 50px;
-    font-size: x-large;}
+    top: 102px;
+    font-size: x-large;
+    left: 50px;
+  }
   
