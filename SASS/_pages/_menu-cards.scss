@@ -25,18 +25,19 @@
       font-size: 20px;
       margin-right: -50px;
       cursor:pointer;
+      margin: 0;
+      transition:all 1s;
+      cursor: pointer;
+
     }
       .fa-circle-check:before {
         content: "\f058";
         margin-left: 15px;
          
       }    
-    &:hover .choix{
-      margin: 0;
-      transition:all 0.5s;
-      cursor: pointer;
+  
     }
-  }
+  
   i.fa-solid.fa-circle-check{
     color: white;
   }
@@ -49,7 +50,7 @@
     width: 80%;
      }
     .choix {
-      opacity: 1;
+  
       width: 10px;
     }
 
