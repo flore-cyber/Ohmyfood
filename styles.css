@@ -199,8 +199,8 @@ button.gradient.menu {
   text-align: center;
   align-items: center;
 }
-.explorer.h2 {
-  width: 287px;
+.explorer h2.explorer {
+  width: 80%;
   padding-top: 0px;
 }
 
