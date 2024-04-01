@@ -26,13 +26,14 @@
       margin-right: -50px;
       cursor:pointer;
       margin: 0;
-      transition:all 1s;
-      cursor: pointer;
+      transition: all 1s;
 
     }
       .fa-circle-check:before {
         content: "\f058";
         margin-left: 15px;
+        
+        
          
       }    
   
@@ -40,6 +41,7 @@
   
   i.fa-solid.fa-circle-check{
     color: white;
+    align-items: center;
   }
    div.menu{
     text-overflow: ellipsis;
@@ -52,6 +54,10 @@
     .choix {
   
       width: 10px;
+      transition: all 2.5s;
+      align-items: center;
+      display: flex;
+
     }
 
   h4.card-menu-title{

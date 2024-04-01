@@ -165,7 +165,7 @@ button {
   height: 50px;
   color: #f2f2f2;
   border: transparent;
-  margin-top: 25px;
+  margin-top: 10px;
   cursor: pointer;
   box-shadow: #d3d3d3 2px 1px 15px -3px;
   font-size: 16px;
@@ -201,7 +201,7 @@ button.gradient.menu {
 }
 .explorer h2.explorer {
   width: 80%;
-  padding-top: 0px;
+  margin-bottom: 10px;
 }
 
 .explorer p {
@@ -502,19 +502,17 @@ h3.menu {
   font-size: 20px;
   margin-right: -50px;
   cursor: pointer;
+  margin: 0;
+  transition: all 1s;
 }
 .card-menu .fa-circle-check:before {
   content: "\f058";
   margin-left: 15px;
 }
-.card-menu:hover .choix {
-  margin: 0;
-  transition: all 0.5s;
-  cursor: pointer;
-}
 
 i.fa-solid.fa-circle-check {
   color: white;
+  align-items: center;
 }
 
 div.menu {
@@ -527,8 +525,10 @@ div.menu {
 }
 
 .choix {
-  opacity: 1;
   width: 10px;
+  transition: all 2.5s;
+  align-items: center;
+  display: flex;
 }
 
 h4.card-menu-title {
